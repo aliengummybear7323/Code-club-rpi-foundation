@@ -40,3 +40,5 @@ while True:
         print("Sorry, that's not quite right! You're hot.")
     else:
         print("Sorry, that's not quite right, but you're so hot it might melt your face off!")
+
+# Tada! Hope you enjoyed it this game :)
