@@ -20,6 +20,9 @@ while True:
     except ValueError:
         print("NOPE! That is not a number, you monkey! Try again.")
         continue
+    except KeyboardInterrupt:
+        print("\nGoodbye!")
+        sys.exit(0)
 
     guess_number += 1
 
