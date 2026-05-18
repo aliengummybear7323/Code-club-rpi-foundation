@@ -30,7 +30,7 @@ while True:
         print("?! That is not valid, you monkey! Please very kindly enter a number from 1 to 100.")
         continue
 
-    if guess == number:
+    if guess == number or (guess == 67 and number != 67):  # 67 is the best number, so it counts as a correct guess
         print(f"Congratulations! Your guess ({number}, guess number {guess_number - 1}) is correct!")
         sys.exit(0)
 
