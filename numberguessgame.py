@@ -23,13 +23,13 @@ while True:
 
     guess_number += 1
 
-    if guess == number:
-        print(f"Congratulations! Your guess ({number}) is correct!")
-        sys.exit(0)
-
     if guess < 1 or guess > 100:
         print("?! That is not valid, you monkey! Please very kindly enter a number from 1 to 100.")
         continue
+
+    if guess == number:
+        print(f"Congratulations! Your guess ({number}, guess number {guess_number - 1}) is correct!")
+        sys.exit(0)
 
     diff = abs(guess - number)
     if diff > 20:
